@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>APPLICATION FORM</title>
+    <style>
+        .header{
+            color:rgb(228, 18, 18);
+            background-color: rgb(50, 209, 209);
+            text-align: center;
+            border-radius: 20px;
+        }
+        legend{
+            text-align: center;
+        }
+        fieldset{
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+        form{
+            border-radius: 20px;
+            background-image: url(https://img.freepik.com/premium-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg?w=2000) ;
+        }
+
+        .btn{
+            text-align: center;
+            align-items: center;
+            margin-left: 600px;
+            margin-right: 600px;
+            background-color: rgb(131, 169, 16);
+            padding: 100px,30px,100px,30px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 class="header">APPLICATION FORM</h1>
+
+    <form action="C:\Users\sande\OneDrive\Desktop\Submitted.html">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="User Name">User Name:</label>
+            <input type="text" placeholder="Full Name" required>
+            <br>
+            <br>
+            <label for="Email">Email Id:</label>
+            <input type="Email" placeholder="Email Id"required pattern="(?=.*\d)(?=.*[@]">
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="text" placeholder="Password"required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&*!]).{8,}" title="Password must contain atleast one number,
+            atleast one special character,lower and uppercase and it should be atleast 8 or more characters">
+            <br>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="contact number">Contact Number:</label>
+            <input type="number" placeholder="Contact number"><br><br>
+            <label for="Address">Address:</label><br>
+            <textarea name="address"  cols="30" rows="5" ></textarea><br>
+            
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Select Your Gender</legend>
+            
+            <input type="radio" name="Gender" required>Male <br>
+            <input type="radio" name="Gender">Female <br>
+            <input type="radio" name="Gender">Others <br>
+            
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend>Select Your Skills</legend>
+                <input type="checkbox" name="checkbox">C <br>
+                <input type="checkbox" name="checkbox">C++ <br>
+                <input type="checkbox" name="checkbox">Java <br>
+                <input type="checkbox" name="checkbox">Python <br>
+                <input type="checkbox" name="checkbox">HTML <br>
+                <input type="checkbox" name="checkbox">SQL <br>
+                <input type="checkbox" name="checkbox">Others <br>
+                <input type="text" placeholder="if others skills">
+        </fieldset>
+        <br><br>
+
+        <fieldset>
+            <legend> Experience</legend>
+                <select>
+                    <option value="Select">Select</option>
+                    <option value="0-1">0 to 1 year</option>
+                    <option value="1-2">1 to 2 year</option>
+                    <option value="2-3">2 to 3 year</option>
+                    <option value="3-5">3 to 5 year</option>
+                    <option value="5 above">above 5 year</option>
+                </select>
+        </fieldset>
+        <br>
+        <button class="btn">Submit</button>
+
+    </form>
+</body>
+</html>
